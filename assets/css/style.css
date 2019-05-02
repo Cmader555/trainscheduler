@@ -1,8 +1,52 @@
-th {
-
-    padding: 1.5rem; 
-}
-
 input {
     display: inline;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(../images/train.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 850px;
+}
+
+.chooOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 290px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: purple;
+}
+
+.cContain:hover .chooOverlay {
+    opacity: .75;
+}
+
+.choo {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .chooOverlay {
+        height: 226px;
+    }
 }

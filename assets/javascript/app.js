@@ -74,8 +74,14 @@ database.ref().on("child_added", function (snapshot) {
 
 
 
-$(".reset").on("click", function (){
+$(".reset").on("click", function () {
 
+  var updates = {};
+  database.ref().set({
 
+    updates: updates
+  });
+
+  $(".traintable tbody").empty();
 
 }); 
